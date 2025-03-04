@@ -1,9 +1,23 @@
-## Submission for nodejs-measurements test
+# Node.js Measurements Test
 
-To run the app, you need to run the docker compose file: "docker-compose up --build" while having docker open.
-The dockerfile will run the application with the database.
+## Running the Application
 
-When the app is running you can navigate to http://localhost:3000/api-docs/#/.
-This is the swagger page where the endpoints are listed and can be tested.
+1. **Install dependencies**  
+   Run the following command in the project root directory to install all necessary dependencies:
+   ```bash
+   npm install
 
-if you want to run the tests, you need to enter "npm test" in the terminal in the root of the project.
+2. **Start the application**  
+   Ensure that Docker is running, then execute:
+   ```bash
+   docker-compose up --build
+   This will build and run both the application and the database.
+
+3. **Accessing the API documentation**  
+   Once the application is running, open http://localhost:3000/api-docs/#/ in your browser.
+   This will open the Swagger page, where you can explore and test the available endpoints.
+
+## Running Tests
+   To run the unit and integration tests, simply use:
+   ```bash
+   npm test

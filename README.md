@@ -11,6 +11,7 @@
    Ensure that Docker is running, then execute:
    ```bash
    docker-compose up --build
+   ```
    This will build and run both the application and the database.
 
 3. **Accessing the API documentation**  
